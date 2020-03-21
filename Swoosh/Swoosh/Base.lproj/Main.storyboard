@@ -98,23 +98,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="desiredLeagueBG" translatesAutoresizingMaskIntoConstraints="NO" id="vwE-vK-81p">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="10p-Ck-aOr">
-                                <rect key="frame" x="0.0" y="19.999999999999996" width="414" height="48.666666666666657"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LB4-VF-H7Q">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="0.0"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="209" id="0kX-MT-ENg"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" ambiguous="YES" text="Desired League" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-ms-cq6">
-                                        <rect key="frame" x="0.0" y="20" width="414" height="28.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="cwC-og-KnO">
                                 <rect key="frame" x="20" y="246" width="374" height="204"/>
                                 <subviews>
@@ -172,25 +155,42 @@
                                     <segue destination="As1-zo-90j" kind="unwind" unwindAction="unwindWithUnwindSegue:" id="r55-qE-lCM"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="10p-Ck-aOr">
+                                <rect key="frame" x="103" y="20" width="209" height="78.666666666666671"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="LB4-VF-H7Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="209" height="20"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="209" id="0kX-MT-ENg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" text="Desired League" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddA-ms-cq6">
+                                        <rect key="frame" x="0.0" y="49.999999999999993" width="209" height="28.666666666666664"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="svz-ss-0eV" firstAttribute="leading" secondItem="iph-v8-5FN" secondAttribute="leading" id="10a-tC-lES"/>
-                            <constraint firstItem="iph-v8-5FN" firstAttribute="trailing" secondItem="10p-Ck-aOr" secondAttribute="trailing" id="2po-27-kd9"/>
                             <constraint firstItem="cwC-og-KnO" firstAttribute="leading" secondItem="iph-v8-5FN" secondAttribute="leading" constant="20" id="32W-3k-U9Q"/>
                             <constraint firstItem="vwE-vK-81p" firstAttribute="top" secondItem="iph-v8-5FN" secondAttribute="top" id="5Wm-p2-SYi"/>
-                            <constraint firstItem="cwC-og-KnO" firstAttribute="top" secondItem="10p-Ck-aOr" secondAttribute="bottom" constant="177.33000000000001" id="8xy-za-27P"/>
                             <constraint firstItem="vwE-vK-81p" firstAttribute="leading" secondItem="iph-v8-5FN" secondAttribute="leading" id="FjO-4J-rpu"/>
                             <constraint firstItem="iph-v8-5FN" firstAttribute="trailing" secondItem="svz-ss-0eV" secondAttribute="trailing" id="GPu-rO-6aO"/>
                             <constraint firstItem="cwC-og-KnO" firstAttribute="trailing" secondItem="iph-v8-5FN" secondAttribute="trailing" constant="-20" id="Id0-1s-NTL"/>
-                            <constraint firstItem="10p-Ck-aOr" firstAttribute="top" secondItem="r6d-GJ-3oW" secondAttribute="top" constant="20" id="LSi-er-zze"/>
                             <constraint firstItem="0Bx-EO-H7c" firstAttribute="leading" secondItem="iph-v8-5FN" secondAttribute="leading" constant="20" id="NCm-yp-l14"/>
-                            <constraint firstItem="10p-Ck-aOr" firstAttribute="leading" secondItem="iph-v8-5FN" secondAttribute="leading" id="SYa-8f-PLG"/>
+                            <constraint firstItem="iph-v8-5FN" firstAttribute="trailing" secondItem="10p-Ck-aOr" secondAttribute="trailing" constant="102" id="Qxl-Ex-0qc"/>
+                            <constraint firstItem="cwC-og-KnO" firstAttribute="top" secondItem="10p-Ck-aOr" secondAttribute="bottom" constant="147.33000000000001" id="WxI-NR-WUI"/>
                             <constraint firstItem="vwE-vK-81p" firstAttribute="trailing" secondItem="iph-v8-5FN" secondAttribute="trailing" id="YSt-9h-MAU"/>
                             <constraint firstItem="svz-ss-0eV" firstAttribute="top" secondItem="cwC-og-KnO" secondAttribute="bottom" constant="200" id="hR5-bV-mia"/>
                             <constraint firstItem="iph-v8-5FN" firstAttribute="bottom" secondItem="vwE-vK-81p" secondAttribute="bottom" id="l7j-8M-hpl"/>
                             <constraint firstItem="iph-v8-5FN" firstAttribute="bottom" secondItem="svz-ss-0eV" secondAttribute="bottom" constant="20" id="pDK-3C-ub4"/>
                             <constraint firstItem="0Bx-EO-H7c" firstAttribute="top" secondItem="iph-v8-5FN" secondAttribute="top" constant="20" id="vDp-8r-xzG"/>
+                            <constraint firstItem="10p-Ck-aOr" firstAttribute="top" secondItem="iph-v8-5FN" secondAttribute="top" constant="20" id="xga-i4-piX"/>
+                            <constraint firstItem="10p-Ck-aOr" firstAttribute="leading" secondItem="0Bx-EO-H7c" secondAttribute="trailing" constant="54" id="yLc-g0-2NZ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iph-v8-5FN"/>
                     </view>
@@ -212,23 +212,6 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="beginnerBallerBG" translatesAutoresizingMaskIntoConstraints="NO" id="LPw-c3-FZd">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wA6-Sz-o4m">
-                                <rect key="frame" x="0.0" y="20" width="414" height="68.666666666666671"/>
-                                <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-jK-nhn">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="20"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" constant="209" id="jvR-WM-vIM"/>
-                                        </constraints>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" text="I AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqR-tS-X4E">
-                                        <rect key="frame" x="0.0" y="40" width="414" height="28.666666666666671"/>
-                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
-                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="33" translatesAutoresizingMaskIntoConstraints="NO" id="9vm-yZ-PSq">
                                 <rect key="frame" x="20" y="266" width="374" height="46"/>
                                 <subviews>
@@ -267,18 +250,34 @@
                                     <color key="titleColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="wA6-Sz-o4m">
+                                <rect key="frame" x="148" y="20" width="119" height="68.666666666666671"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="OLb-jK-nhn">
+                                        <rect key="frame" x="0.0" y="0.0" width="119" height="20"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" text="I AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NqR-tS-X4E">
+                                        <rect key="frame" x="0.0" y="40" width="119" height="28.666666666666671"/>
+                                        <fontDescription key="fontDescription" type="system" weight="thin" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="LD9-1G-Lwb" firstAttribute="top" secondItem="9vm-yZ-PSq" secondAttribute="bottom" constant="364" id="1F7-R0-gyL"/>
                             <constraint firstItem="LPw-c3-FZd" firstAttribute="bottom" secondItem="7Oe-75-dwG" secondAttribute="bottom" id="3Sv-JS-yLQ"/>
+                            <constraint firstItem="wA6-Sz-o4m" firstAttribute="leading" secondItem="7Oe-75-dwG" secondAttribute="leading" constant="148" id="4pP-HP-hy9"/>
+                            <constraint firstItem="wA6-Sz-o4m" firstAttribute="top" secondItem="7Oe-75-dwG" secondAttribute="top" constant="20" id="5PS-XR-71P"/>
                             <constraint firstItem="7Oe-75-dwG" firstAttribute="trailing" secondItem="9vm-yZ-PSq" secondAttribute="trailing" constant="20" id="6kf-gC-krr"/>
+                            <constraint firstItem="7Oe-75-dwG" firstAttribute="trailing" secondItem="wA6-Sz-o4m" secondAttribute="trailing" constant="147" id="7r9-Rn-6PV"/>
+                            <constraint firstItem="9vm-yZ-PSq" firstAttribute="top" secondItem="wA6-Sz-o4m" secondAttribute="bottom" constant="177.33000000000001" id="GPS-ib-PBA"/>
                             <constraint firstItem="LD9-1G-Lwb" firstAttribute="leading" secondItem="7Oe-75-dwG" secondAttribute="leading" id="SDz-Q4-2aU"/>
                             <constraint firstItem="7Oe-75-dwG" firstAttribute="bottom" secondItem="LD9-1G-Lwb" secondAttribute="bottom" constant="20" id="alH-z2-RD7"/>
                             <constraint firstItem="7Oe-75-dwG" firstAttribute="bottom" secondItem="LD9-1G-Lwb" secondAttribute="bottom" constant="20" id="cmv-5m-WPf"/>
-                            <constraint firstItem="wA6-Sz-o4m" firstAttribute="leading" secondItem="7Oe-75-dwG" secondAttribute="leading" id="gah-xC-Qfb"/>
                             <constraint firstItem="LPw-c3-FZd" firstAttribute="leading" secondItem="7Oe-75-dwG" secondAttribute="leading" id="hns-QY-5eY"/>
-                            <constraint firstItem="7Oe-75-dwG" firstAttribute="trailing" secondItem="wA6-Sz-o4m" secondAttribute="trailing" id="jaq-c4-s6Y"/>
                             <constraint firstItem="LPw-c3-FZd" firstAttribute="trailing" secondItem="7Oe-75-dwG" secondAttribute="trailing" id="nil-bx-3L8"/>
                             <constraint firstItem="wA6-Sz-o4m" firstAttribute="top" secondItem="7Oe-75-dwG" secondAttribute="top" constant="20" id="p8C-i0-wvD"/>
                             <constraint firstItem="LPw-c3-FZd" firstAttribute="top" secondItem="7Oe-75-dwG" secondAttribute="top" id="xiv-Yk-7Hy"/>
